@@ -1,0 +1,28 @@
+{
+  "name": "fern-scribe",
+  "version": "1.0.0",
+  "description": "AI-powered documentation assistant for GitHub",
+  "main": "fern-scribe.js",
+  "scripts": {
+    "test": "node test-local.js pr-conflict",
+    "test:pr-conflict": "node test-local.js pr-conflict",
+    "test:pr-clean": "node test-local.js pr-clean",
+    "test:pr-draft": "node test-local.js pr-draft",
+    "test:issue": "node test-local.js issue",
+    "test:all": "npm run test:pr-conflict && npm run test:pr-clean && npm run test:pr-draft && npm run test:issue"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.0.0",
+    "@turbopuffer/turbopuffer": "^0.10.14",
+    "js-yaml": "^4.1.0",
+    "dotenv": "^16.0.0"
+  },
+  "keywords": [
+    "documentation",
+    "ai",
+    "github",
+    "automation"
+  ],
+  "author": "Your Team",
+  "license": "MIT"
+}
